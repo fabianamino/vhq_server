@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "singularName": "model",
+    "pluralName": "models",
+    "displayName": "Model"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Skills": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "string"
+    },
+    "StartTime": {
+      "type": "string"
+    },
+    "EndTime": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::slider.slider"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "RateCard": {
+      "type": "string"
+    },
+    "Premium": {
+      "type": "boolean"
+    }
+  }
+}
